@@ -1,0 +1,43 @@
+.blog-header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #161515;
+    color: #f5d04c;
+}
+/* General styles for nav */
+.container nav a, .container nav ul {
+    text-decoration: none;
+}
+
+nav {
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b3b3b;
+    display: flex;
+}
+
+.container nav a {
+    color: #faf9f9;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.container nav ul {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.container nav ul li {
+    padding: 5px 5px;
+}
+
+.container nav ul li:hover {
+    border-bottom: 2px solid #dbfddb;
+    transition: border-bottom 0.3s ease;
+    color: #faf9f9;
+}
+

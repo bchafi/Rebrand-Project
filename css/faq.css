@@ -1,0 +1,104 @@
+/* General FAQ Styles */
+.faq-header {
+    height: 100px;
+    margin: auto;/* Set height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+.faq-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #FFD700;
+    text-align: center;
+}
+
+.faq-header p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 400px; /* Set a reasonable minimum height */
+}
+
+/* FAQ Item */
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.faq-question:after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    color: #f5d04c;
+    transition: transform 0.3s;
+}
+
+.faq-question.active:after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.faq-question:hover {
+    background-color: #444;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.2s ease;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* FAQ Answer Active (Visible) */
+.faq-question.active + .faq-answer {
+    max-height: 100px; /* Adjust depending on the content height */
+    transition: max-height 0.5s ease;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-header h1 {
+        font-size: 2em;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    .faq-answer p {
+        font-size: 0.9em;
+    }
+}

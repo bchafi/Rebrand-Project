@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Contact Page Header -->
+    <header class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Please fill out the form below to get in touch.</p>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+    <script src="../src/script2.js" defer></script>
+    <div id="footer"></div>
+   <script>
+        // Load the header
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load the footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+    </body>
+</html>

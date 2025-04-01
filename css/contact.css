@@ -1,0 +1,76 @@
+/* Contact Page Styles */
+.contact-header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #161515;
+    color: #f5d04c;
+}
+
+.contact-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+form {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}

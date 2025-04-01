@@ -1,0 +1,180 @@
+
+@import url('header.css');
+@import url('faq.css');
+@import url('about.css');
+@import url('blog.css');
+@import url('error.css');
+@import url('contact.css');
+@import url('footer.css');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image-container {
+    aspect-ratio: 16 / 9; /* Change to your desired ratio */
+    width: 100%; /* or specific width */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Maintain full height */
+    object-fit: cover; /* Cover the area, maintaining aspect ratio */
+}
+.box a,.box h2,.button{text-decoration:none}
+.box h1{font-size:20px;color:#ffd700}
+.box h2,.box p,.button{color:#fff}
+.box h2{padding:15px 0px;font-size:20px}
+.box,.box h2,.button,.offer{text-align:center}*{margin:0;padding:0;font-family:Verdana,Geneva,Tahoma,sans-serif}
+.clear{clear:both}
+.button{display:inline-block;padding:10px 20px;background-color:#4caf50;border:none;border-radius:5px;cursor:pointer;font-size:16px}
+.content,nav{display:flex}
+.button:hover{background-color:#45a049}
+.button:active{background-color:#8d6600}
+.offer{color:#7fff00;margin:auto;width:max-content;font-size:30px}
+body{font-size: 16px; line-height: 1.5; background-color:#161515; height:100vh}
+.content{width:90%;margin:auto;justify-content:center;align-items:center;flex-wrap:wrap}
+.box{height:460px;width:500px;background:#000;margin:5px;overflow:hidden}
+.box img{width:100%;height:auto;}
+.welcome{background-color:#1a1a1a;color:#f5d04c;padding:20px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,.5);max-width:1000px;margin:20px auto}
+.welcome p{font-size:1.1em;color:#e0e0e0;line-height:1.6;margin-bottom:15px}
+.welcome p:last-child{margin-bottom:0}
+/* General Styling */
+.social-share {
+    text-align: center; /* Center the content */
+    padding: 20px;
+}
+.social-share h3 {
+    color: gold;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+/* Button Styling */
+.social-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: gold;
+    background-color: #333; /* Dark background */
+    border: 2px solid gold;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+/* Hover Effects */
+.social-btn:hover {
+    background-color: gold; /* Change to gold on hover */
+    color: #333; /* Dark text on hover */
+}
+/* Individual Button Colors (optional) */
+.facebook-btn {
+    background-color: #3b5998; /* Facebook color */
+}
+.facebook-btn:hover {
+    background-color: #3b5998;
+    color: white;
+}
+.twitter-btn {
+    background-color: #1DA1F2; /* Twitter color */
+}
+.twitter-btn:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+.pinterest-btn {
+    background-color: #bd081c; /* Pinterest color */
+}
+.pinterest-btn:hover {
+    background-color: #bd081c;
+    color: white;
+}
+/* Styles for Mobile Devices */
+@media (max-width:767px)
+{
+nav ul {
+        display: none;
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust position below the nav bar */
+        right: 0;
+        width: 100%;
+        background-color: #3b3b3b; /* Same color as your nav */
+        z-index: 1;
+    }
+
+    /* Show the hamburger menu */
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    /* Style for nav items */
+    nav ul li {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 5px 0px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        background-color: #444; /* Background for each link */
+    }
+
+    nav ul li a:hover {
+        background-color: #555; /* Background on hover */
+    }
+    .welcome {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+    .welcome h1 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+    .product-list h1,h2 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+.content{flex-direction:column;align-items:center}
+.box{width:100%;max-width:500px}
+.button{font-size:14px;padding:8px 16px}
+.offer{font-size:24px}
+}
+/* Styles for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu-icon {
+        display: none; /* Hide the hamburger icon on desktop */
+    }
+
+    nav ul {
+        display: flex; /* Show the menu by default */
+        flex-direction: row;
+    }
+    .welcome h1 {
+        font-size: 20px; /* Medium heading size */
+    }
+     .product-list h1,h2 {
+        font-size: 18px; /* Smaller heading for mobile */
+    }
+}
+/* Styles for Desktops */
+@media (min-width: 1025px) {
+    .welcome h1 {
+        font-size: 22px; /* Larger heading size */
+    }
+    .content {
+        max-width: 1800px; /* Constrain content width */
+        margin: auto; /* Center content */
+    }
+     .product-list h1,h2 {
+        font-size: 20px; /* Smaller heading for mobile */
+    }
+}
