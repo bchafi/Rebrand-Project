@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Rebrandapps.us</title>
     <link rel="stylesheet" href="../css/style.css"> <!-- Link to your main CSS file -->
+    <style>
+        #header {
+            background-color: #161515;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="header"></div>
+    <div id="header" style="background-color: #161515"></div>
     <!-- Blog Page Header -->
     <header class="blog-header">
         <h1>Welcome to Our Blog</h1>
@@ -21,7 +28,8 @@
             <img src="../img/image1.jpg" alt="Blog Post Image 1" class="post-image">
             <div class="post-content">
                 <h2 class="post-title">IPTV Rebranding Services</h2>
-                <p class="post-snippet">In today's competitive IPTV market, offering a unique and personalized experience is essential to stand out from the crowd.</p>
+                <p class="post-snippet">In today's competitive IPTV market, offering a unique and personalized
+                    experience is essential to stand out from the crowd.</p>
                 <a href="../blog/post1.html" class="button">Read More</a>
             </div>
         </article>
@@ -31,7 +39,8 @@
             <img src="../img/image2.jpg" alt="Blog Post Image 2" class="post-image">
             <div class="post-content">
                 <h2 class="post-title">What is IPTV?</h2>
-                <p class="post-snippet">IPTV works by transmitting media content over the internet using a protocol known as IP (Internet Protocol)..</p>
+                <p class="post-snippet">IPTV works by transmitting media content over the internet using a protocol
+                    known as IP (Internet Protocol)..</p>
                 <a href="../blog/post2.html" class="button">Read More</a>
             </div>
         </article>
@@ -45,46 +54,53 @@
                 <a href="../blog/post3.html" class="button">Read More</a>
             </div>
         </article>
-		<!-- Blog Post 4 -->
+        <!-- Blog Post 4 -->
         <article class="post">
             <img src="../img/image4.webp" alt="What is IPTV and How Does It Work?" class="post-image">
             <div class="post-content">
                 <h2 class="post-title">What is IPTV and How Does It Work?</h2>
-                <p class="post-snippet">IPTV, or Internet Protocol Television, is a system that delivers television content over the internet instead of traditional cable or satellite formats. </p>
+                <p class="post-snippet">IPTV, or Internet Protocol Television, is a system that delivers television
+                    content over the internet instead of traditional cable or satellite formats. </p>
                 <a href="../blog/post4.html" class="button">Read More</a>
             </div>
         </article>
-		<!-- Blog Post 5 -->
+        <!-- Blog Post 5 -->
         <article class="post">
             <img src="../img/image5.webp" alt="are the iptv ilegal?" class="post-image">
             <div class="post-content">
                 <h2 class="post-title">How to Set Up and Install IPTV on Any Device?</h2>
-                <p class="post-snippet">Setting up IPTV on your device is easier than you think. Follow these steps to install IPTV on Smart TVs, Android devices, iOS, and streaming sticks like Firestick. </p>
+                <p class="post-snippet">Setting up IPTV on your device is easier than you think. Follow these steps to
+                    install IPTV on Smart TVs, Android devices, iOS, and streaming sticks like Firestick. </p>
                 <a href="../blog/post5.html" class="button">Read More</a>
             </div>
         </article>
-		<!-- Blog Post 6 -->
+        <!-- Blog Post 6 -->
         <article class="post">
             <img src="../img/image6.webp" alt="are the iptv ilegal?" class="post-image">
             <div class="post-content">
                 <h2 class="post-title">The Best IPTV Services in 2024: A Complete Guide?</h2>
-                <p class="post-snippet">Choosing the right IPTV service can be overwhelming with so many options available. In this guide, we review the top IPTV services in 2024, comparing pricing, features, and channels offered by each. </p>
+                <p class="post-snippet">Choosing the right IPTV service can be overwhelming with so many options
+                    available. In this guide, we review the top IPTV services in 2024, comparing pricing, features, and
+                    channels offered by each. </p>
                 <a href="../blog/post6.html" class="button">Read More</a>
             </div>
         </article>
-		
+
         <!-- Add more blog posts as needed -->
     </section>
+
     <script src="../src/script2.js" defer></script>
-<div id="footer"></div>
+
+    <div id="footer"></div>
+
     <script>
         // Load the header
-        fetch('../header')
+        fetch('../header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header').innerHTML = data);
 
         // Load the footer
-        fetch('../footer')
+        fetch('../footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
@@ -93,4 +109,5 @@
 
 
 </body>
+
 </html>

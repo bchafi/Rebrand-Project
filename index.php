@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="description" content="RebrandApps offers custom IPTV app design services, helping you create personalized apps with your logo and colors. Stand out with unique, branded IPTV solutions tailored to your needs.">
     <meta property="og:title" content="Rebrand IPTV Services | RebrandApps">
@@ -18,51 +19,44 @@
     <link rel="stylesheet" href="css/header.css?v=2">
     <link rel="icon" href="src/rebfav.png" type="image/png">
     <title>IPTV Rebrand & Customization | RebrandApps</title>
-        <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "RebrandApps",
-      "url": "https://rebrandapps.us",
-      "logo": "https://rebrandapps.us/reb.png",
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61566618407652", 
-        "https://x.com/ElayachiILYASS", 
-        "https://www.instagram.com/elayachi_ilyass/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+212653023032",
-        "contactType": "Customer Service",
-        "areaServed": "US",
-        "availableLanguage": "English"
-      }
-    }
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RebrandApps",
+            "url": "https://rebrandapps.us",
+            "logo": "https://rebrandapps.us/reb.png",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61566618407652",
+                "https://x.com/ElayachiILYASS",
+                "https://www.instagram.com/elayachi_ilyass/"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+212653023032",
+                "contactType": "Customer Service",
+                "areaServed": "US",
+                "availableLanguage": "English"
+            }
+        }
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ8ZGPJK8X"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-ZJ8ZGPJK8X');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZJ8ZGPJK8X');
     </script>
     <!-- End Google Analytics -->
 </head>
-<body>
-   <div id="header"></div>
-    <!--  <div class="welcome">
-        <h1>Custom IPTV App Design Services</h1> <!-- Change to <h1>
-        
-        <h2>Why Choose RebrandApps?</h2> <!-- Keep one H2 
-        <p>At RebrandApps, we specialize in custom IPTV app design services that help you create a unique and personalized experience for your users...</p>
-        
-        <h2>Personalized IPTV Solutions</h2> <!-- Keep one H2 
-        <p>With our IPTV customization services, you can showcase your brand with custom logos...</p>
 
-        <p>Our personalized IPTV app design ensures that your customers enjoy a seamless and engaging user experience...</p>
-    </div>-->
+<body>
+    <div id="header" style="background-color: #161515"></div>
     <div class="social-share">
         <h3>Share Our Service</h3>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https://rebrandapps.us" target="_blank" rel="noopener noreferrer" class="social-btn facebook-btn">Share on Facebook</a>
@@ -96,33 +90,29 @@
     </div>
     <script src="src/script.js?v=2" defer></script>
     <script src="src/script2.js?v=2" defer></script>
+    <footer id="footer"></footer>
     <script>
-    function toggleMenu() {
-        let menu = document.getElementById("navLinks");
-        menu.classList.toggle("show");
-    }
+        function toggleMenu() {
+            let menu = document.getElementById("navLinks");
+            menu.classList.toggle("show");
+        }
 
-    // ✅ Attach event listener to make sure function is recognized
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("menuToggle").addEventListener("click", toggleMenu);
-    });
-</script>
-    <div id="footer"></div>
-    
-        <script>
-            // Load the header
-            fetch('header')
-                .then(response => response.text())
-                .then(data => document.getElementById('header').innerHTML = data)
-                .catch(error => console.error('Error loading header:', error));
-    
-            // Load the footer
-            fetch('footer')
+        // ✅ Attach event listener to make sure function is recognized
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("menuToggle").addEventListener("click", toggleMenu);
+        });
+    </script>
+    <script>
+        // Load the header
+        fetch('../header.html')
             .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data)
-            .catch(error => console.error('Error loading footer:', error));
-         </script>
-     
-   
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        // Load the footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
+
 </html>

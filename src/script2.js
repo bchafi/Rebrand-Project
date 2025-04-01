@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Toggle Menu Functionality
-    const navLinks = document.getElementById('nav-links');
-    const menuIcon = document.querySelector('.menu-icon'); // Make sure to have the correct selector for the menu icon
+    // // Toggle Menu Functionality
+    // const navLinks = document.getElementById('nav-links');
+    // const menuIcon = document.querySelector('.menu-icon'); // Make sure to have the correct selector for the menu icon
 
-    if (menuIcon) {
-        menuIcon.addEventListener('click', function() {
-            if (navLinks.style.display === 'block') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'block';
-            }
-        });
-    }
+    // if (menuIcon) {
+    //     menuIcon.addEventListener('click', function() {
+    //         if (navLinks.style.display === 'block') {
+    //             navLinks.style.display = 'none';
+    //         } else {
+    //             navLinks.style.display = 'block';
+    //         }
+    //     });
+    // }
 
     // FAQ Questions Handling
     const faqQuestions = document.querySelectorAll(".faq-question");
