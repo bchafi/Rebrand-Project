@@ -40,6 +40,21 @@
             }
         }
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .bg-dark {
+            background-color: #161515 !important;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+    </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ8ZGPJK8X"></script>
     <script>
@@ -55,8 +70,31 @@
     <!-- End Google Analytics -->
 </head>
 
-<body>
-    <div id="header" style="background-color: #161515"></div>
+<body style="background-color: #161515">
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid d-flex align-items-center">
+                    <a class="logo me-auto" href="./index.php">
+                        <img class="logo-img" src="src/reb.png" height="100px" width="100px" alt="logo">
+                    </a>`
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav mt-4 bg-#161515">
+                            <li><a class="nav-link text-light" href="./index.php">Home</a></li>
+                            <li><a class="nav-link text-light" href="../blog/index.html">Blog</a></li>
+                            <li><a class="nav-link text-light" href="../faq/index.html">FAQ</a></li>
+                            <li><a class="nav-link text-light" href="https://t.me/IPTV_REBRAND" target="_blank"
+                                    rel="noopener noreferrer">Live Chat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
     <div class="social-share">
         <h3>Share Our Service</h3>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https://rebrandapps.us" target="_blank" rel="noopener noreferrer" class="social-btn facebook-btn">Share on Facebook</a>
@@ -102,17 +140,7 @@
             document.getElementById("menuToggle").addEventListener("click", toggleMenu);
         });
     </script>
-    <script>
-        // Load the header
-        fetch('../header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
 
-        // Load the footer
-        fetch('../footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
 </body>
 
 </html>
