@@ -1,0 +1,16 @@
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.herro {
+    background-color: #161515 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.herro > p {
+    padding: 14px 0;
+}

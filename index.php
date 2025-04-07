@@ -15,8 +15,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css?v=2">
-    <link rel="stylesheet" href="css/header.css?v=2">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="src/rebfav.png" type="image/png">
     <title>IPTV Rebrand & Customization | RebrandApps</title>
     <script type="application/ld+json">
@@ -54,6 +54,33 @@
             box-shadow: none !important;
             border: none !important;
         }
+
+        .herro {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a.nav-link.text-light {
+            color: grey !important;
+            animation: none;
+            transition: color .6s ease;
+        }
+        a.nav-link.text-light:hover {
+            text-decoration: none !important;
+            color: yellow !important;
+            text-shadow: grey 1px 0px 10px !important;
+        }
+        @media (max-width: 992px){
+           #header ul li{
+                background-color: #161515 !important;
+                text-align: center !important;
+           }
+           #header ul li:hover{
+                background-color: #161515 !important;
+           } 
+        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ8ZGPJK8X"></script>
@@ -83,7 +110,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav mt-4 bg-#161515">
+                        <ul class="navbar-nav mt-4" style="background-color: #161515;">
                             <li><a class="nav-link text-light" href="./index.php">Home</a></li>
                             <li><a class="nav-link text-light" href="../blog/index.html">Blog</a></li>
                             <li><a class="nav-link text-light" href="../faq/index.html">FAQ</a></li>
@@ -102,33 +129,37 @@
         <a href="https://www.pinterest.com/pin/create/button/?url=https://rebrandapps.us&media=https://rebrandapps.us/theme/reb.png&description=Custom IPTV App Design Services" target="_blank" rel="noopener noreferrer" class="social-btn pinterest-btn">Share on Pinterest</a>
     </div>
     <div class="content" id="product-list"></div>
-    <div class="faq-header">
-        <h1>Frequently Asked Questions</h1>
-        <p>Your most common questions, answered.</p>
-    </div>
-    <div class="faq-container">
-        <div class="faq-item">
-            <button class="faq-question">What services do you offer?</button>
-            <div class="faq-answer">
-                <p>We offer a variety of services including IPTV app customization, web development, and more. Check our services page for a full list.</p>
+    <div class="herro">
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your most common questions, answered.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What services do you offer?</button>
+                <div class="faq-answer">
+                    <p>We offer a variety of services including IPTV app customization, web development, and more. Check our services page for a full list.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I contact customer support?</button>
+                <div class="faq-answer">
+                    <p>You can reach us via our contact form, email, or through WhatsApp. We are available 24/7 to assist you.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept?</button>
+                <div class="faq-answer">
+                    <p>We accept major credit cards, PayPal, and other payment methods, depending on your location.</p>
+                </div>
             </div>
         </div>
-        <div class="faq-item">
-            <button class="faq-question">How can I contact customer support?</button>
-            <div class="faq-answer">
-                <p>You can reach us via our contact form, email, or through WhatsApp. We are available 24/7 to assist you.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">What payment methods do you accept?</button>
-            <div class="faq-answer">
-                <p>We accept major credit cards, PayPal, and other payment methods, depending on your location.</p>
-            </div>
+        <div style="color: gray;">
+            <p style="margin-bottom: 0px">&copy; 2016 Rebrandapps.us All rights reserved.</p>
         </div>
     </div>
     <script src="src/script.js?v=2" defer></script>
     <script src="src/script2.js?v=2" defer></script>
-    <footer id="footer"></footer>
     <script>
         function toggleMenu() {
             let menu = document.getElementById("navLinks");
@@ -140,7 +171,6 @@
             document.getElementById("menuToggle").addEventListener("click", toggleMenu);
         });
     </script>
-
 </body>
 
 </html>
